@@ -1,4 +1,4 @@
-import { FizzBuzz } from "./src/FizzBuzz";
+import { FizzBuzz } from ".././src/FizzBuzz";
 
 describe("FizzBuzz should", function() {
     describe("when number is 1", function() {
