@@ -1,0 +1,11 @@
+{
+  "name": "fizzbuzz_kata_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jasmine"
+  },
+  "author": "",
+  "license": "ISC"
+}
