@@ -7,5 +7,8 @@
     "test": "npx jasmine"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^7.0.0"
+  }
 }
