@@ -1,7 +1,7 @@
 import { FizzBuzz } from ".././src/FizzBuzz";
 
 describe("FizzBuzz should", function() {
-    describe("when number is not 3", function() {
+    describe("when number is not 3 or 5", function() {
         it("returns the number", () => {
             [
                 [1],
