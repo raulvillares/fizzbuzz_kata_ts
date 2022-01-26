@@ -15,17 +15,6 @@ describe("FizzBuzz should", function() {
         });
     });
 
-        describe("when number is 3", function() {
-        it("returns fizz", function() {
-
-            let fizzBuzz = new FizzBuzz();
-
-            let result = fizzBuzz.generate(3);
-        
-            expect(result).toBe("fizz");
-        });
-    });
-
     describe("when number is 5", function() {
         it("returns buzz", function() {
 
@@ -36,4 +25,20 @@ describe("FizzBuzz should", function() {
             expect(result).toBe("buzz");
         });
     });
+
+    describe("when number is multiple of 3", function() {
+        it("returns fizz", () => {
+            [
+                [3],
+                [6],
+                [9],
+                [12]
+            ].forEach(([number]) => {
+                let fizzBuzz = new FizzBuzz();
+                let result = fizzBuzz.generate(number);
+                expect(result).toBe("fizz");
+            })
+        });
+    });
+
   });
