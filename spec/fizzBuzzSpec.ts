@@ -45,4 +45,19 @@ describe("FizzBuzz should", function() {
         });
     });
 
+    describe("when number is multiple of 3 and 5", function() {
+        it("returns fizzBuzz", () => {
+            [
+                [15],
+                [30],
+                [45],
+                [90]
+            ].forEach(([number]) => {
+                let fizzBuzz = new FizzBuzz();
+                let result = fizzBuzz.generate(number);
+                expect(result).toBe("fizzBuzz");
+            })
+        });
+    });
+
   });
