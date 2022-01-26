@@ -165,5 +165,5 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode
 
-./spec/*.js
-./src/*.js
+spec/*.js
+src/*.js
