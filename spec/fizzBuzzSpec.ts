@@ -15,7 +15,7 @@ describe("FizzBuzz should", function() {
         });
     });
 
-    describe("when number is 3", function() {
+        describe("when number is 3", function() {
         it("returns fizz", function() {
 
             let fizzBuzz = new FizzBuzz();
@@ -26,4 +26,14 @@ describe("FizzBuzz should", function() {
         });
     });
 
+    describe("when number is 5", function() {
+        it("returns buzz", function() {
+
+            let fizzBuzz = new FizzBuzz();
+
+            let result = fizzBuzz.generate(5);
+        
+            expect(result).toBe("buzz");
+        });
+    });
   });
