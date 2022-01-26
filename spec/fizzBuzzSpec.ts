@@ -22,4 +22,15 @@ describe("FizzBuzz should", function() {
             expect(result).toBe("2");
         });
     });
+
+    describe("when number is 3", function() {
+        it("returns fizz", function() {
+
+            let fizzBuzz = new FizzBuzz();
+
+            let result = fizzBuzz.generate(3);
+        
+            expect(result).toBe("fizz");
+        });
+    });
   });
