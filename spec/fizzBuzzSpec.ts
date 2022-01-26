@@ -15,14 +15,18 @@ describe("FizzBuzz should", function() {
         });
     });
 
-    describe("when number is 5", function() {
-        it("returns buzz", function() {
-
-            let fizzBuzz = new FizzBuzz();
-
-            let result = fizzBuzz.generate(5);
-        
-            expect(result).toBe("buzz");
+    describe("when number is multiple of 5", function() {
+        it("returns buzz", () => {
+            [
+                [5],
+                [10],
+                [20],
+                [25]
+            ].forEach(([number]) => {
+                let fizzBuzz = new FizzBuzz();
+                let result = fizzBuzz.generate(number);
+                expect(result).toBe("buzz");
+            })
         });
     });
 
