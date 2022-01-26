@@ -11,4 +11,15 @@ describe("FizzBuzz should", function() {
             expect(result).toBe("1");
         });
     });
+
+    describe("when number is 2", function() {
+        it("returns 2", function() {
+
+            let fizzBuzz = new FizzBuzz();
+
+            let result = fizzBuzz.generate(2);
+        
+            expect(result).toBe("2");
+        });
+    });
   });
